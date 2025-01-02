@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Shopping Cart</h1>
+
+
+        <div class="product-list">
+            <h2>Available Products</h2>
+            <div class="product" data-name="Laptop" data-price="50000">
+                <p>Product: Laptop</p>
+                <p>Price:₹50000</p>
+                <button onclick="addProduct('Laptop', 50000)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Smartphone" data-price="30000">
+                <p>Product: Smartphone</p>
+                <p>Price:₹30000</p>
+                <button onclick="addProduct('Smartphone',30000)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Headphones" data-price="2000">
+                <p>Product: Headphones</p>
+                <p>Price:₹2000</p>
+                <button onclick="addProduct('Headphones', 2000)">Add to Cart</button>
+            </div>
+        </div>
+
+        
+        <div class="cart">
+            <h2>Cart Summary</h2>
+            <ul id="cart-items">
+            </ul>
+            <p>Total: ₹<span id="total-price">0.00</span></p>
+            <button onclick="clearCart()">Clear Cart</button>
+        </div>
+    </div>
+
+    <script src="task2.js"></script>
+</body>
+</html>
